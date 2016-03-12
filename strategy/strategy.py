@@ -5,23 +5,20 @@ Created on 10/03/2016
 '''
 import abc
 
+
 class Speak(object):
     __metaclass__ = abc.ABCMeta
-    
+
     @abc.abstractmethod
-    def falar(self):
-        """"implementacao"""
+    def speak(self):
+        raise NotImplementedError
 
-class Humano(Speak):
-    
-    def falar(self):
-        return 'oi'
-    
-class Cachorro(Speak):
-    
-    def falar(self):
-        return 'Au au'
 
-lista = [Humano(), Cachorro()]
-for speak in lista:
-    print(speak.falar());
+class Human(Speak):
+    def speak(self):
+        return 'Hello!'
+
+
+class Dog(Speak):
+    def speak(self):
+        return 'Bark!'
