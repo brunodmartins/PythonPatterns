@@ -12,11 +12,15 @@ class Subject(object):
     '''
     observers = [];
     
-    state = 0
+    @property
+    def state(self):
+        return self.__state
     
-    def setState(self, value):
-        self.state = value
+    @state.setter
+    def state(self,value):
+        self.__state = value
         self.notifyAllObservers()
+    
      
     def notifyAllObservers(self):
         for observer in self.observers:
@@ -37,7 +41,7 @@ class Observer(object):
         raise NotImplementedError
 
 
-class ConcreteObserver(Observer):
+class ConcreteObserverA(Observer):
       
     subject = None
     
@@ -46,11 +50,22 @@ class ConcreteObserver(Observer):
         subject.attach(self)
       
     def update(self):
-        print('Novo estado ' + str(self.subject.state))
+        print('Novo estado a' + str(self.subject.state))
         
+class ConcreteObserverB(Observer):
+      
+    subject = None
+    
+    def __init__(self, subject):
+        self.subject = subject
+        subject.attach(self)
+      
+    def update(self):
+        print('Novo estado b ' + str(self.subject.state))
 
 s = Subject();
-observer = ConcreteObserver(s)
-s.setState(2)
-s.setState(3)
-s.setState(4)
+observer = ConcreteObserverA(s)
+observer = ConcreteObserverB(s)
+s.state = 2
+s.state = 3
+s.state = 4
