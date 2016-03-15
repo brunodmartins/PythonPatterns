@@ -11,11 +11,23 @@ class Subject(object):
     classdocs
     '''
     observers = [];
-
+    
+    state = 0
+    
+    def setState(self, value):
+        self.state = value
+        self.notifyAllObservers()
+     
     def notifyAllObservers(self):
         for observer in self.observers:
             observer.update();
-
+            
+    def attach(self, observer):
+        self.observers.append(observer)
+    
+    def deatach(self, observer):
+        self.observers.remove(observer)
+    
 
 class Observer(object):
     __metaclass__ = abc.ABCMeta
@@ -25,12 +37,20 @@ class Observer(object):
         raise NotImplementedError
 
 
-class ObserverA(Observer):
+class ConcreteObserver(Observer):
+      
+    subject = None
+    
+    def __init__(self, subject):
+        self.subject = subject
+        subject.attach(self)
+      
     def update(self):
-        print('Novo estado')
+        print('Novo estado ' + str(self.subject.state))
         
 
-a = ObserverA();
 s = Subject();
-s.observers.append(a);
-s.notifyAllObservers();
+observer = ConcreteObserver(s)
+s.setState(2)
+s.setState(3)
+s.setState(4)
