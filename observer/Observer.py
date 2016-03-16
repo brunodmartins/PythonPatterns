@@ -6,66 +6,84 @@ Created on 15/03/2016
 
 import abc
 
-class Subject(object):
+class TemperatureSubject(object):
     '''
     classdocs
     '''
-    observers = [];
+    themometers = [];
     
     @property
-    def state(self):
-        return self.__state
+    def temperature(self):
+        """Returns the current Celsius temperature"""
+        return self.__temperature
     
-    @state.setter
-    def state(self,value):
-        self.__state = value
-        self.notifyAllObservers()
+    @temperature.setter
+    def temperature(self,value):
+        """Sets the current temperature in Celsius"""
+        self.__temperature = value
+        self.notifyThermometers()
     
      
-    def notifyAllObservers(self):
-        for observer in self.observers:
-            observer.update();
+    def notifyThermometers(self):
+        for thermometer in self.themometers:
+            thermometer.update();
             
-    def attach(self, observer):
-        self.observers.append(observer)
+    def attach(self, thermometer):
+        self.themometers.append(thermometer)
     
-    def deatach(self, observer):
-        self.observers.remove(observer)
+    def deatach(self, thermometer):
+        self.themometers.remove(thermometer)
     
 
-class Observer(object):
+class Thermometer(object):
     __metaclass__ = abc.ABCMeta
+    
+    temperature = 0
     
     @abc.abstractmethod
     def update(self):
         raise NotImplementedError
 
 
-class ConcreteObserverA(Observer):
+class CelsiusThermometer(Thermometer):
       
-    subject = None
+    temperature_subject = None
     
-    def __init__(self, subject):
-        self.subject = subject
-        subject.attach(self)
+    def __init__(self, temperature_subject):
+        self.temperature_subject = temperature_subject
+        temperature_subject.attach(self)
       
     def update(self):
-        print('Novo estado a ' + str(self.subject.state))
+        self.temperature = self.temperature_subject.temperature
+        print('Celsius:' + str(self.temperature))
         
-class ConcreteObserverB(Observer):
+class FahrenheitThermometer(Thermometer):
       
-    subject = None
+    temperature_subject = None
     
-    def __init__(self, subject):
-        self.subject = subject
-        subject.attach(self)
+    def __init__(self, temperature_subject):
+        self.temperature_subject = temperature_subject
+        temperature_subject.attach(self)
       
     def update(self):
-        print('Novo estado b ' + str(self.subject.state))
+        self.temperature = self.temperature_subject.temperature * 1.8000 + 32.00
+        print('Fahrenheit:' + str(self.temperature))
 
-s = Subject();
-observer = ConcreteObserverA(s)
-observer = ConcreteObserverB(s)
-s.state = 2
-s.state = 3
-s.state = 4
+class KelvinThermometer(Thermometer):
+      
+    temperature_subject = None
+    
+    def __init__(self, temperature_subject):
+        self.temperature_subject = temperature_subject
+        temperature_subject.attach(self)
+      
+    def update(self):
+        self.temperature = self.temperature_subject.temperature + 273.15
+        print('Kelvin:' + str(self.temperature))
+
+temperature_subject = TemperatureSubject()
+celsius  = CelsiusThermometer(temperature_subject)
+fahrenheit = FahrenheitThermometer(temperature_subject)
+kelvin = KelvinThermometer(temperature_subject)
+
+temperature_subject.temperature = 36
