@@ -50,7 +50,7 @@ class ConcreteObserverA(Observer):
         subject.attach(self)
       
     def update(self):
-        print('Novo estado a' + str(self.subject.state))
+        print('Novo estado a ' + str(self.subject.state))
         
 class ConcreteObserverB(Observer):
       
