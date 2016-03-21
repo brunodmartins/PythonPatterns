@@ -49,11 +49,3 @@ class KDEButton(Button):
 
     def paint(self):
         print('KDEButton');
-
-
-factory = GuiFactory.create_factory('Gnome');
-button = factory.create_button();
-button.paint();
-factory = GuiFactory.create_factory('Kde');
-button = factory.create_button();
-button.paint();
