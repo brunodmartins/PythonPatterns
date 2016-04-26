@@ -5,3 +5,7 @@ python:
 install: "pip install pytest"
 # command to run tests
 script: python -m unittest discover -p "*test.py"
+before_script:
+  - pip install --user codecov
+after_success:
+  - codecov
