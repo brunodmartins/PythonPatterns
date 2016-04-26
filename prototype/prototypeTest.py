@@ -4,8 +4,9 @@ Created on 22/04/2016
 @author: bruno.martins
 '''
 import unittest.test
-from enterprise import Employee
 from unittest.case import TestCase
+from prototype.enterprise import Employee
+
 
 class MyClass(TestCase):
     '''

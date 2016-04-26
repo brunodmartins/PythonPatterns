@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.5"
+# command to install dependencies
+install: "pip install pytest"
+# command to run tests
+script: python -m unittest discover -p "*test.py"
+
+# public repository on Travis CI
+install:
+  - pip install codecov
+after_success:
+  - codecov
