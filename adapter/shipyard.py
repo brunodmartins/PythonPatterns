@@ -1,14 +1,15 @@
-'''
+"""
 Created on 26/04/2016
 
 @author: bruno.martins
-'''
+"""
 import abc
 
+
 class Battleship(object):
-    '''
+    """
     classdocs
-    '''
+    """
     __metaclass__ = abc.ABCMeta;
     
     def fire(self):
@@ -17,10 +18,11 @@ class Battleship(object):
     def move(self):
         raise NotImplementedError
 
+
 class Captain(Battleship):
-    '''
+    """
     classdocs
-    '''
+    """
 
     def __init__(self, battleship=None):
         '''
@@ -29,30 +31,34 @@ class Captain(Battleship):
         self.battleship = battleship
 
     def fire(self):
-        print 'Fire'
+        self.battleship.fire()
     
     def move(self):
-        print 'Move'
+        self.battleship.move()
+
 
 class BattleFishingBoat(Battleship):
-    '''
+    """
     classdocs
-    '''
-    
+    """
+
+    def __init__(self):
+        self.boat = FishihingBoat()
+
     def fire(self):
-        print 'Fire'
+        print('Fire!')
     
     def move(self):
-        print 'Move'
+        self.boat.sail()
+
 
 class FishihingBoat(object):
-    '''
+    """
     classdocs
-    '''
+    """
     
     def sail(self):
-        print 'Sail'
+        print('The Boat is moving to that place')
     
     def fish(self):
-        print 'Fish'
-        
+        print('Fishing...')
