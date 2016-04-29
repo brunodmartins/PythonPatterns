@@ -50,6 +50,18 @@ class BattleFishingBoat(Battleship):
     
     def move(self):
         self.boat.sail()
+        
+
+class BattleWarBoat(Battleship):
+    """
+    classdocs
+    """      
+
+    def fire(self):
+        print('Fire the cannon!')
+    
+    def move(self):
+        print('Move forward to death')
 
 
 class FishihingBoat(object):
