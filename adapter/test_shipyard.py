@@ -4,7 +4,7 @@ Created on 28/04/2016
 @author: bruno.martins
 '''
 import unittest
-from shipyard import *
+from adapter.shipyard import *
 
 
 class Test(unittest.TestCase):
