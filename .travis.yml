@@ -8,6 +8,6 @@ script: python -m unittest discover -p "*test.py"
 
 # public repository on Travis CI
 install:
-  - pip install codecov
+  - pip install coveralls
 after_success:
-  - codecov
+  - coveralls
