@@ -80,10 +80,3 @@ class KelvinThermometer(Thermometer):
     def update(self):
         self.temperature = self.temperature_subject.temperature + 273.15
         print('Kelvin:' + str(self.temperature))
-
-temperature_subject = TemperatureSubject()
-celsius  = CelsiusThermometer(temperature_subject)
-fahrenheit = FahrenheitThermometer(temperature_subject)
-kelvin = KelvinThermometer(temperature_subject)
-
-temperature_subject.temperature = 36

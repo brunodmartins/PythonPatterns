@@ -20,5 +20,5 @@ class Test(unittest.TestCase):
         print(hero.powers)
         
 
-
-Test().test_builder()
+if __name__ == '__main__':
+    unittest.main()

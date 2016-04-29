@@ -1,5 +1,5 @@
 import unittest
-from memento.saves import SaveFile, MemoryCard
+from saves import *
 
 __author__ = 'Bruno'
 
