@@ -1,5 +1,5 @@
 import unittest
-from saves import *
+from memento.saves import *
 
 __author__ = 'Bruno'
 
