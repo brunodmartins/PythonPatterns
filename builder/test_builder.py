@@ -4,7 +4,7 @@ Created on 21/03/2016
 @author: bruno.martins
 '''
 
-import unittest.test
+import unittest
 from builder import HeroBuilder
 
 

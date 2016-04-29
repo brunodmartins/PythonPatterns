@@ -1,4 +1,4 @@
-import unittest.test
+import unittest
 import strategy
 __author__ = 'Bruno'
 

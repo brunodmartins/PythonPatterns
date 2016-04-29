@@ -3,12 +3,11 @@ Created on 22/04/2016
 
 @author: bruno.martins
 '''
-import unittest.test
-from unittest.case import TestCase
+import unittest
 from prototype.enterprise import Employee
 
 
-class MyClass(TestCase):
+class MyClass(unittest.TestCase):
     '''
     classdocs
     '''

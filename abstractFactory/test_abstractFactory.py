@@ -1,5 +1,5 @@
-import unittest.test
-from abstractFactory import *
+import unittest
+from abstractFactory.abstractFactory import GuiFactory,GnomeButton,KDEButton
 
 __author__ = 'Bruno'
 

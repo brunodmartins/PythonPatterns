@@ -1,7 +1,6 @@
 import abc;
 __author__ = 'Bruno'
 
-
 class Person(object):
     __metaclass__ = abc.ABCMeta
 
