@@ -1,5 +1,5 @@
 import unittest
-from factoryMethod.pessoa import * 
+from pessoa import * 
 
 __author__ = 'Bruno'
 
