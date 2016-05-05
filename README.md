@@ -3,6 +3,6 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 
 ##Creational Patterns
 
-* [Abstract Factory] (./abstractFactory/abstractFactory.py)
+* [Abstract Factory] (./abstractFactory)
 
 [![Build Status](https://travis-ci.org/BrunoDM2943/PythonPaterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)
