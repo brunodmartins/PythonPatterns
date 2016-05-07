@@ -4,5 +4,20 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 ##Creational Patterns
 
 * [Abstract Factory] (./abstractFactory)
+* [Builder] (./builder)
+* [Factory Method] (./factoryMethod)
+* [Prototype] (./prototype)
+
+##Structural Patterns
+
+* [Adapter] (./adapter)
+* [Bridge] (./bridge)
+* [Facade] (./facade)
+
+##Behavioral Patterns
+
+* [Memento] (./memento)
+* [Observer] (./observer)
+* [Strategy] (./strategy)
 
 [![Build Status](https://travis-ci.org/BrunoDM2943/PythonPaterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)
