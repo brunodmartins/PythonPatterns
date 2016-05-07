@@ -1,0 +1,6 @@
+{
+  "name": "Pythonpaterns",
+  "tagline": "Design Patterns coded in Python",
+  "body": "# PythonPaterns\r\nThis repo contains some design patterns coded in Python. I hope it can help you learn python, as I am learning, and get knowledge of some GoF(Gang of Four) Patterns. If you need some help to understand, or have any suggestion, mail me =D\r\n\r\n##Creational Patterns\r\n\r\n* [Abstract Factory] (./abstractFactory)\r\n* [Builder] (./builder)\r\n* [Factory Method] (./factoryMethod)\r\n* [Prototype] (./prototype)\r\n\r\n##Structural Patterns\r\n\r\n* [Adapter] (./adapter)\r\n* [Bridge] (./bridge)\r\n* [Facade] (./facade)\r\n\r\n##Behavioral Patterns\r\n\r\n* [Memento] (./memento)\r\n* [Observer] (./observer)\r\n* [Strategy] (./strategy)\r\n\r\n[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPaterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
