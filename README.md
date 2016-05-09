@@ -7,6 +7,7 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 * [Builder] (./builder)
 * [Factory Method] (./factoryMethod)
 * [Prototype] (./prototype)
+* [Singleton] (./singleton)
 
 ##Structural Patterns
 
@@ -20,4 +21,4 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 * [Observer] (./observer)
 * [Strategy] (./strategy)
 
-[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPaterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)
+[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)
