@@ -15,6 +15,7 @@ http://brunodm2943.github.io/PythonPatterns
 
 * [Adapter] (./adapter)
 * [Bridge] (./bridge)
+* [Composite] (./composite)
 * [Facade] (./facade)
 
 ##Behavioral Patterns
