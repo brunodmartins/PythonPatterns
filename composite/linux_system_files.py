@@ -1,9 +1,10 @@
-'''
+"""
 Created on 16/05/2016
 
 @author: bruno.martins
-'''
-import abc;
+"""
+import abc
+
 
 class File(object):
     """
@@ -17,14 +18,44 @@ class File(object):
         """
         self.name = name
 
+    """
+    List files
+    """
+
+    @abc.abstractmethod
+    def list_files(self):
+        raise NotImplementedError
+
+
 class Directory(File):
     
     def __init__(self, name):
-        super()._init__(name)
+        File.__init__(self, name)
         self.files = []
+
+    """
+    List files on this directory.
+    """
+
+    def list_files(self):
+        print(self.name)
+        for file in self.files:
+            file.list_files()
+
 
 class RegularFile(File):
     
     def __init__(self, name):
-        super()._init__(name)
-            
+        File.__init__(self, name)
+
+    def list_files(self):
+        print(self.name)
+
+
+d = Directory('root')
+d.files.append(RegularFile('file'))
+d.files.append(RegularFile('file2'))
+d2 = Directory('var')
+d2.files.append(RegularFile('file3'))
+d.files.append(d2)
+d.list_files()
