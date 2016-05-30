@@ -21,7 +21,6 @@ class File(object):
     """
     List files
     """
-
     @abc.abstractmethod
     def list_files(self):
         raise NotImplementedError
@@ -36,7 +35,6 @@ class Directory(File):
     """
     List files on this directory.
     """
-
     def list_files(self):
         print(self.name)
         for file in self.files:
@@ -50,12 +48,3 @@ class RegularFile(File):
 
     def list_files(self):
         print(self.name)
-
-
-d = Directory('root')
-d.files.append(RegularFile('file'))
-d.files.append(RegularFile('file2'))
-d2 = Directory('var')
-d2.files.append(RegularFile('file3'))
-d.files.append(d2)
-d.list_files()
