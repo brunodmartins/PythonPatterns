@@ -104,17 +104,3 @@ class BaconDecorator(DecoratorFood):
 
     def price(self):
         return DecoratorFood.price(self) + 3
-
-
-food = Hamburger()
-print(food.description())
-print(food.price())
-food = CheeseDecorator(food)
-print(food.description())
-print(food.price())
-food = BaconDecorator(food)
-print(food.description())
-print(food.price())
-food = SaladDecorator(food)
-print(food.description())
-print(food.price())
