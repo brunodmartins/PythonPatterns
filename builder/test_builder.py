@@ -15,10 +15,9 @@ class Test(unittest.TestCase):
     '''
     
     def test_builder(self):
-        hero = HeroBuilder().withName('Teste').withPowers('Slaving').build();
-        print(hero.name)
-        print(hero.powers)
-        
+        hero = HeroBuilder().withName('Test').withPowers('Slaving').build();
+        self.assertEqual(hero.name, 'Test')
+        self.assertEqual(hero.powers, 'Slaving')
 
 if __name__ == '__main__':
     unittest.main()
