@@ -37,7 +37,7 @@ class AMDProcessor(Processor):
         super().__init__(alu)
 
     def sum_two_numbers(self, number1, number2):
-        print(self.alu.sum(number1, number2))
+        return self.alu.sum(number1, number2)
 
 
 class Alu(object):
