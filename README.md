@@ -16,7 +16,10 @@ http://brunodm2943.github.io/PythonPatterns
 * [Adapter] (./adapter)
 * [Bridge] (./bridge)
 * [Composite] (./composite)
+* [Decorator] (./decorator)
 * [Facade] (./facade)
+* [Flyweight] (./flyweight)
+* [Proxy] (./proxy)
 
 ##Behavioral Patterns
 
