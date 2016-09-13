@@ -27,4 +27,4 @@ http://brunodm2943.github.io/PythonPatterns
 * [Observer] (./observer)
 * [Strategy] (./strategy)
 
-[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPaterns)
+[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPatterns)
