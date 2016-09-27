@@ -23,8 +23,13 @@ http://brunodm2943.github.io/PythonPatterns
 
 ##Behavioral Patterns
 
+* [Chain of responsibility] (./chainOfResponsibility)
+* [Command] (./command)
+* [Iterator] (./iterator)
 * [Memento] (./memento)
 * [Observer] (./observer)
+* [State] (./state)
 * [Strategy] (./strategy)
+* [Template] (./template)
 
 [![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPatterns)
