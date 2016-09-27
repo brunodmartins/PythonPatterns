@@ -1,5 +1,5 @@
 import unittest
-from restaurant import *
+from decorator.restaurant import *
 
 __author__ = 'Bruno'
 
