@@ -10,4 +10,5 @@ script: python -m unittest discover -p "*test_*.py" -v
 install:
   - pip install coveralls
 after_success:
+  - coverage run -m unittest discover
   - bash <(curl -s https://codecov.io/bash)
