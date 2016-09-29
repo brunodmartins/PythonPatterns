@@ -3,6 +3,8 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 
 http://brunodm2943.github.io/PythonPatterns
 
+[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPatterns)
+
 ##Creational Patterns
 
 * [Abstract Factory] (./abstractFactory)
@@ -25,11 +27,10 @@ http://brunodm2943.github.io/PythonPatterns
 
 * [Chain of responsibility] (./chainOfResponsibility)
 * [Command] (./command)
+* [Interpreter] (./interpreter)
 * [Iterator] (./iterator)
 * [Memento] (./memento)
 * [Observer] (./observer)
 * [State] (./state)
 * [Strategy] (./strategy)
 * [Template] (./template)
-
-[![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPatterns)
