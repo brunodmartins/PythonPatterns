@@ -10,4 +10,4 @@ script: python -m unittest discover -p "*test_*.py" -v
 install:
   - pip install coveralls
 after_success:
-  - coveralls
+  - bash <(curl -s https://codecov.io/bash)
