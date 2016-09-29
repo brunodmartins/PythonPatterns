@@ -4,6 +4,8 @@ This repo contains some design patterns coded in Python. I hope it can help you 
 http://brunodm2943.github.io/PythonPatterns
 
 [![Build Status](https://travis-ci.org/BrunoDM2943/PythonPatterns.svg?branch=master)](https://travis-ci.org/BrunoDM2943/PythonPatterns)
+[![codecov](https://codecov.io/gh/BrunoDM2943/PythonPatterns/branch/master/graph/badge.svg)](https://codecov.io/gh/BrunoDM2943/PythonPatterns)
+
 
 ##Creational Patterns
 
