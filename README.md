@@ -29,6 +29,7 @@ http://brunodm2943.github.io/PythonPatterns
 * [Command] (./command)
 * [Interpreter] (./interpreter)
 * [Iterator] (./iterator)
+* [Mediator] (./mediator)
 * [Memento] (./memento)
 * [Observer] (./observer)
 * [State] (./state)
