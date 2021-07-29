@@ -9,31 +9,31 @@ http://brunodm2943.github.io/PythonPatterns
 
 ## Creational Patterns
 
-* [Abstract Factory] (./abstractFactory)
-* [Builder] (./builder)
-* [Factory Method] (./factoryMethod)
-* [Prototype] (./prototype)
-* [Singleton] (./singleton)
+* [Abstract Factory](./abstractFactory)
+* [Builder](./builder)
+* [Factory Method](./factoryMethod)
+* [Prototype](./prototype)
+* [Singleton](./singleton)
 
 ## Structural Patterns
 
-* [Adapter] (./adapter)
-* [Bridge] (./bridge)
-* [Composite] (./composite)
-* [Decorator] (./decorator)
-* [Facade] (./facade)
-* [Flyweight] (./flyweight)
-* [Proxy] (./proxy)
+* [Adapter](./adapter)
+* [Bridge](./bridge)
+* [Composite](./composite)
+* [Decorator](./decorator)
+* [Facade](./facade)
+* [Flyweight](./flyweight)
+* [Proxy](./proxy)
 
 ## Behavioral Patterns
 
-* [Chain of responsibility] (./chainOfResponsibility)
-* [Command] (./command)
-* [Interpreter] (./interpreter)
-* [Iterator] (./iterator)
-* [Mediator] (./mediator)
-* [Memento] (./memento)
-* [Observer] (./observer)
-* [State] (./state)
-* [Strategy] (./strategy)
-* [Template] (./template)
+* [Chain of responsibility](./chainOfResponsibility)
+* [Command](./command)
+* [Interpreter](./interpreter)
+* [Iterator](./iterator)
+* [Mediator](./mediator)
+* [Memento](./memento)
+* [Observer](./observer)
+* [State](./state)
+* [Strategy](./strategy)
+* [Template](./template)
