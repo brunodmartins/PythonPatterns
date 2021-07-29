@@ -7,7 +7,7 @@ http://brunodm2943.github.io/PythonPatterns
 [![codecov](https://codecov.io/gh/BrunoDM2943/PythonPatterns/branch/master/graph/badge.svg)](https://codecov.io/gh/BrunoDM2943/PythonPatterns)
 
 
-##Creational Patterns
+## Creational Patterns
 
 * [Abstract Factory] (./abstractFactory)
 * [Builder] (./builder)
@@ -15,7 +15,7 @@ http://brunodm2943.github.io/PythonPatterns
 * [Prototype] (./prototype)
 * [Singleton] (./singleton)
 
-##Structural Patterns
+## Structural Patterns
 
 * [Adapter] (./adapter)
 * [Bridge] (./bridge)
@@ -25,7 +25,7 @@ http://brunodm2943.github.io/PythonPatterns
 * [Flyweight] (./flyweight)
 * [Proxy] (./proxy)
 
-##Behavioral Patterns
+## Behavioral Patterns
 
 * [Chain of responsibility] (./chainOfResponsibility)
 * [Command] (./command)
